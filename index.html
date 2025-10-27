@@ -580,6 +580,7 @@
         <div class="right">
             <header class="header">
                 <i class="fa-regular fa-lightbulb"></i>
+                <button id="logoutBtn">Logout</button>
                 <button>Sign In</button>
             </header>
 
@@ -825,6 +826,43 @@ function previewFile(file) {
         imagePreview.innerHTML = "<p style='color:#ccc;'>Unsupported file type. Please upload image or PDF.</p>";
     }
 }
+
+    // Try to get the logged-in user info
+    const user = JSON.parse(localStorage.getItem("loggedInUser"));
+
+    if (user) {
+        // ✅ If logged in, show their name
+        document.getElementById("welcome").textContent = `Welcome, ${user.username}!`;
+    } else {
+        // ❌ If not logged in, redirect back to login
+        alert("Please log in first!");
+        window.location.href = "login.html"; // Change this if your login page name is different
+    }
+
+    // 🚪 Logout button clears session
+    function logout() {
+        localStorage.removeItem("loggedInUser");
+        window.location.href = "index.html";
+    }
+
+
+</script>
+
+<script>
+  // 🚫 Check login status
+  const isLoggedIn = localStorage.getItem("loggedIn");
+
+  if (isLoggedIn !== "true") {
+    // Not logged in → redirect to login page
+    window.location.href = "login.html";
+  }
+</script>
+
+<script>
+  document.getElementById("logoutBtn").addEventListener("click", () => {
+    localStorage.removeItem("loggedIn"); // clear login
+    window.location.href = "login.html"; // go back to login
+  });
 </script>
 
 
