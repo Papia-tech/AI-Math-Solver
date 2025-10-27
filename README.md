@@ -5,11 +5,11 @@
 Built using **Flask + SymPy + JavaScript**, this app provides a clean interface for students, teachers, and developers to experiment with symbolic mathematics.
 
 ### ✨ Features
-- 🔹 Simplify and evaluate expressions  
-- 🔹 Compute derivatives and integrals  
-- 🔹 Solve algebraic equations step-by-step  
-- 🔹 Renders results beautifully using MathJax  
-- 🔹 Works entirely in your browser — no complex setup  
+-  Simplify and evaluate expressions  
+-  Compute derivatives and integrals  
+-  Solve algebraic equations step-by-step  
+-  Renders results beautifully using MathJax  
+-  Works entirely in your browser — no complex setup  
 
 ### 🧠 Tech Stack
 - **Frontend:** HTML, CSS, JavaScript  
