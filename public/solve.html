@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Math Solver</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="head">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <h1>History</h1>
+            <div id="historyList"></div>
+            <button class="clear-btn" id="clearHistory">Clear All</button>
+        </div>
+
+        <div class="right">
+            <header class="header">
+                <i id="menuToggle" class="fa-solid fa-bars"></i>
+                <i id="themeToggle" class="fa-regular fa-lightbulb"></i>
+                <button id="logoutBtn">Logout</button>
+                <button id="signInBtn">Sign In</button>
+                <!-- 🔒 Profile Box -->
+                <div id="profileBox" class="profile-box">
+                    <p><strong id="profileName">Name:</strong> <span id="userName"></span></p>
+                    <p><strong id="profileEmail">Email:</strong> <span id="userEmail"></span></p>
+                    <button id="logout">Logout</button>
+                </div>
+            </header>
+
+            <main>
+                <div id="display">
+                    <p><strong>AI Responses will appear here...</strong></p>
+                </div>
+                <div id="output"></div>
+            </main>
+
+            <footer>
+                <div class="img-drop" id="imgDrop">
+                    <!-- Preview Area -->
+                    <div id="imagePreview" style="margin-top:0px; text-align:center;"></div>
+                    <div class="inside">
+                        <i class="fa-solid fa-images"></i>
+                        <p>Drag & drop or click to upload image or PDF</p>
+                    </div>
+                    <input type="file" id="fileInput" accept="image/*,application/pdf" hidden />
+                </div>
+                <div class="expression">
+                    <select id="mathType">
+                        <option>Choose Math Type</option>
+                        <option>Arithmetic</option>
+                        <option>Algebra</option>
+                        <option>Geometry</option>
+                        <option>Calculus</option>
+                        <option>Trigonometry</option>
+                    </select>
+                    <textarea id="mathInput" placeholder="Type a math problem or a question..."></textarea>
+                    <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i> Send</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
