@@ -69,11 +69,6 @@
             color: #ff7430;
         }
 
-        body.light-mode .head i:hover {
-            color: ;
-            /**/
-        }
-
         .fa-arrow-up-from-bracket {
             transform: rotate(270deg);
         }
@@ -177,11 +172,6 @@
             transform: translateY(-2px);
         }
 
-        body.light-mode .clear-btn:hover {
-            background: ;
-            /**/
-        }
-
         /* ===== Right Section ===== */
         .right {
             width: calc(100% - 240px);
@@ -231,11 +221,6 @@
             transform: translateY(-2px);
         }
 
-        body.light-mode .header i:hover {
-            color: ;
-            /**/
-        }
-
         .header button {
             background: #FF5100;
             border: none;
@@ -255,11 +240,6 @@
         .header button:hover {
             background: #ff7430;
             transform: translateY(-2px);
-        }
-
-        body.light-mode .header button:hover {
-            background: ;
-            /**/
         }
 
         #menuToggle {
@@ -538,12 +518,6 @@
             transform: translateY(-2px);
         }
 
-        body.light-mode .expression button:hover {
-            background: ;
-            /**/
-        }
-
-
         /* ===== Main Content & Results ===== */
 
         main {
@@ -803,7 +777,7 @@
                 margin-right: auto;
             }
 
-            .expression select{
+            .expression select {
                 display: none;
             }
 
