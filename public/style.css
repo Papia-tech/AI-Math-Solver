@@ -803,6 +803,10 @@
                 margin-right: auto;
             }
 
+            .expression select{
+                display: none;
+            }
+
             footer {
                 width: 100%;
                 /* This overrides the desktop width: calc(100% - 240px) */
